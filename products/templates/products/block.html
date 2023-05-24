@@ -1,0 +1,248 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'vender/css/static.css' %}">
+        <link rel="stylesheet" href="{% static 'vender/css/block.css' %}">
+        <title>{{title}}</title>
+    </head>
+    <body>
+        <!-- --- Header --- -->
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="header__logo"><img src="/static/vender/img/logo.png" alt="logo"></div>
+                    <div class="header__search">
+                        <input type="text" placeholder="Поиск по сайту">
+                        <button type="submit"><ion-icon name="search-outline"></ion-icon></button>
+                    </div>
+                    <div class="header__reg">
+                        <button class="btn__login Login-popup" type="submit">Войти</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="wrapper-popup">
+            <div class="icon-close"><ion-icon name="close-outline"></ion-icon></div>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>password</label>
+                    </div>
+                    <div class="remember">
+                        <label>
+                            <input type="checkbox">
+                            Remember
+                        </label>
+                        <a href="">Забыли пароль?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <!-- regist -->
+                    <div class="login-regist">
+                        <p>Нет акк?<a href="#" class="regst-link">Регистрация</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="form-box registr">
+                <h2>Registration</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>password</label>
+                    </div>
+                    <div class="remember">
+                        <label>
+                            <input type="checkbox">
+                            я прочитал и согласен с политикой кон
+                        </label>
+                    </div>
+                    <button type="submit" class="btn">Регистрация</button>
+                    <!-- regist -->
+                    <div class="login-regist">
+                        <p>есть акаун<a href="#" class="login-link">Войти</a></p>
+                    </div>
+            </div>
+        </div>
+    
+                <!-- --- Navigation --- -->
+        <nav class="nav">
+            <div class="container">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="{% url 'index' %}">Главное</a></li>
+                    <li class="nav__item"><a href="{% url 'roman' %}">Романы</a></li>
+                    <li class="nav__item"><a href="{% url 'block' %}">Блоги</a></li>
+                    <li class="nav__item"><a href="{% url 'resens' %}">Стихи</a></li>
+                    <li class="nav__item"><a href="{% url 'resens' %}">События</a></li>
+                    <li class="nav__item"><a href="{% url 'resens' %}">Рецензии</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="block-content">
+            <div class="container">
+                <h2 class="block-title">Блоги</h2>
+                <div class="block-subtitle">В современных реалиях печатные и видеоблоги стали неотъемлемой частью нашей жизни. На этой странице мы собрали эксклюзивные и необычные карточки постов из блогов пользователей: актуальные новости и книжные веяния, модные книги месяца и самые оригинальные отзывы с экспертными рецензиями. Оценивайте и комментируйте лучшие публикации!</div>
+                <div class="block-wrapper">
+                    <div class="block-item">
+                        <div class="item__bg"><img src="/static/vender/img/block-item.jpg" alt=""></div>
+                        <div class="item__type">Книга</div>
+                        <div class="item__title">Капитал</div>
+                        <ul class="item__list">
+                            <li><ion-icon name="chatbubble-outline"></ion-icon> <p>5</p></li>
+                            <li><ion-icon name="eye-outline"></ion-icon><p>55</p></li>
+                        </ul>
+                    </div>
+                    <div class="block-item">
+                        <div class="item__bg"><img src="/static/vender/img/block-item.jpg" alt=""></div>
+                        <div class="item__type">Книга</div>
+                        <div class="item__title">Капитал</div>
+                        <ul class="item__list">
+                            <li><ion-icon name="chatbubble-outline"></ion-icon> <p>5</p></li>
+                            <li><ion-icon name="eye-outline"></ion-icon><p>55</p></li>
+                        </ul>
+                    </div>
+                    <div class="block-item">
+                        <div class="item__bg"><img src="/static/vender/img/block-item.jpg" alt=""></div>
+                        <div class="item__type">Книга</div>
+                        <div class="item__title">Капитал</div>
+                        <ul class="item__list">
+                            <li><ion-icon name="chatbubble-outline"></ion-icon> <p>5</p></li>
+                            <li><ion-icon name="eye-outline"></ion-icon><p>55</p></li>
+                        </ul>
+                    </div>
+                    <div class="block-item">
+                        <div class="item__bg"><img src="/static/vender/img/block-item.jpg" alt=""></div>
+                        <div class="item__type">Книга</div>
+                        <div class="item__title">Капитал</div>
+                        <ul class="item__list">
+                            <li><ion-icon name="chatbubble-outline"></ion-icon> <p>5</p></li>
+                            <li><ion-icon name="eye-outline"></ion-icon><p>55</p></li>
+                        </ul>
+                    </div>
+                    <div class="block-item">
+                        <div class="item__bg"><img src="/static/vender/img/block-item.jpg" alt=""></div>
+                        <div class="item__type">Книга</div>
+                        <div class="item__title">Капитал</div>
+                        <ul class="item__list">
+                            <li><ion-icon name="chatbubble-outline"></ion-icon> <p>5</p></li>
+                            <li><ion-icon name="eye-outline"></ion-icon><p>55</p></li>
+                        </ul>
+                    </div>
+                    <div class="block-item">
+                        <div class="item__bg"><img src="/static/vender/img/block-item.jpg" alt=""></div>
+                        <div class="item__type">Книга</div>
+                        <div class="item__title">Капитал</div>
+                        <ul class="item__list">
+                            <li><ion-icon name="chatbubble-outline"></ion-icon> <p>5</p></li>
+                            <li><ion-icon name="eye-outline"></ion-icon><p>55</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+         <!-- --- Roman --- -->
+    <section class="section__roman">
+        <div class="container">
+            <h2 class="roman__title">Романы</h2>
+            <div class="roman__wrapper">
+                <a href="{% url 'roman' %}">
+                    <div class="roman__item">
+                        <div class="roman__lable"><img src="/static/vender/img/roman.png" alt="page"></div>
+                        <div class="roman__subname">Джо Диспенза</div>
+                        <div class="roman__name">Сила подсознания, или Как изменить</div>
+                    </div>
+                </a>
+                <a href="{% url 'roman' %}">
+                    <div class="roman__item">
+                        <div class="roman__lable"><img src="/static/vender/img/roman.png" alt="page"></div>
+                        <div class="roman__subname">Джо Диспенза</div>
+                        <div class="roman__name">Сила подсознания, или Как изменить</div>
+                    </div>
+                </a>
+                <a href="{% url 'roman' %}">
+                    <div class="roman__item">
+                        <div class="roman__lable"><img src="/static/vender/img/roman.png" alt="page"></div>
+                        <div class="roman__subname">Джо Диспенза</div>
+                        <div class="roman__name">Сила подсознания, или Как изменить</div>
+                    </div>
+                </a>
+                <a href="{% url 'roman' %}">
+                    <div class="roman__item">
+                        <div class="roman__lable"><img src="/static/vender/img/roman.png" alt="page"></div>
+                        <div class="roman__subname">Джо Диспенза</div>
+                        <div class="roman__name">Сила подсознания, или Как изменить</div>
+                    </div>
+                </a>
+                <a href="{% url 'roman' %}">
+                    <div class="roman__item">
+                        <div class="roman__lable"><img src="/static/vender/img/roman.png" alt="page"></div>
+                        <div class="roman__subname">Джо Диспенза</div>
+                        <div class="roman__name">Сила подсознания, или Как изменить</div>
+                    </div>
+                </a>
+                <a href="{% url 'roman' %}">
+                    <div class="roman__item">
+                        <div class="roman__lable"><img src="/static/vender/img/roman.png" alt="page"></div>
+                        <div class="roman__subname">Джо Диспенза</div>
+                        <div class="roman__name">Сила подсознания, или Как изменить</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+<!-- footer -->
+<footer class="footer">
+    <div class="container">
+        <ul class="footer-social_icon">
+            <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href=""><ion-icon name="logo-tiktok"></ion-icon></a></li>
+            <li><a href=""><ion-icon name="logo-youtube"></ion-icon></a></li>
+            <li><a href=""><ion-icon name="logo-xbox"></ion-icon></a></li>
+        </ul>
+        <ul class="footer-menu">
+            <li><a href="{% url 'index' %}">Главное</a></li>
+            <li><a href="{% url 'roman' %}">Романы</a></li>
+            <li><a href="{% url 'block' %}">Блоги</a></li>
+            <li><a href="{% url 'stix' %}">Стихи</a></li>
+            <li><a href="{% url 'sobit' %}">События</a></li>
+            <li><a href="{% url 'resens' %}">Рецензии</a></li>
+        </ul>
+        <p>© 2023 HayLib</p>
+    </div>
+</footer>
+<!-- footer -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!-- footer -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="{% static 'vender/js/script.js' %}"></script>
+</body>
+</html>

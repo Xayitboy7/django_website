@@ -1,0 +1,125 @@
+.sobit-title{
+    font-size: 50px;
+    font-weight: 700;
+    margin: 10px 0 20px 0;
+}
+
+.sobit-item {
+    display: flex;
+    height: 200px;
+    width: 100%;
+    box-shadow: 0 0 6px rgba(62, 61, 61, 0.3);
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 40px;
+    transition: .5s;
+}
+
+.sobit-item:hover{
+    box-shadow: 0 0 10px rgba(62, 61, 61, 0.6);
+}
+
+.sobit__img {
+    flex: 1 0 auto;
+    position: relative;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.sobit__img img{
+    position: absolute;
+    top: 0;
+    left: -30px;
+    height: 100%;
+}
+.sobit__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 180px;
+}
+.item__title {
+    font-size: 26px;
+    font-weight: 700;
+}
+.item__subtitle {
+    font-size: 20px;
+    font-style: italic;
+}
+.item__text {
+    font-size: 16px;
+}
+
+/* roman */
+
+/* slick Roman*/
+
+/* Стрелка */
+.roman__wrapper .slick-arrow{
+    position: absolute;
+    top: 130px;
+}
+/* Стрелка влево */
+.roman__wrapper .slick-arrow.slick-prev{
+    left: -26px;
+    font-size: 0;
+    height: 50px;
+    width: 50px;
+    z-index: 10;
+    background: url('/icons/arrow.png') center;
+}
+/* Стрелка вправо */
+.roman__wrapper .slick-arrow.slick-next{
+    right: -6px;
+    font-size: 0;
+    height: 50px;
+    width: 50px;
+    z-index: 10;
+    background: url('/icons/arrow.png') center;
+    transform: rotate(180deg);
+}
+
+.slick-list{
+    overflow: hidden;
+}
+.slick-track{
+    display: flex;
+}
+
+/* Roman */
+
+.section__roman{
+    margin-bottom: 70px;
+}
+
+.roman__wrapper{
+    position: relative;
+    width: 100%;
+}
+
+.roman__item {
+    position: relative;
+    height: 400px;
+    width: 203px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.roman__title{
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 30px;
+}.roman__lable {
+    width: 203px;
+    height: auto;
+}
+.roman__suname {
+}
+.roman__name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}

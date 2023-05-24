@@ -1,0 +1,168 @@
+
+/* main */
+
+main{
+    margin-bottom: 800px;
+}
+
+.roman-block{
+    position: relative;
+    height: 335px;
+    background-image: url('/img/roman/roman-bg.png');
+    background-position: center;
+}
+
+.roman-block__wrapper{
+    position: absolute;
+    top: 335px;
+    display: flex;
+    justify-content: space-between;
+}
+.roman__item {
+    position: relative;
+    top: -243px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 600px;
+}
+.roman__logo {
+
+}
+.roman__rating {
+    position: relative;
+    left: -9px;
+}
+.roman__disc {
+    position: relative;
+    height: 480px;
+    padding: 27px;
+}
+.roman-disc__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 36px;
+    margin-bottom: 13px;
+}
+.roman-disc__text {
+    font-family: 'Montserrat';
+    padding-left: 100px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+.roman-disc__stat {
+}
+
+.roman__comment {
+    top: 950px;
+    position: relative;
+}
+.comment__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 22px;
+    margin-bottom: 50px;
+}
+.commet__wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: #EDF7FF;
+}
+.commet__user {
+    width: 38px;
+    margin: 0 16px;
+}
+.commet__input {
+    padding-right: 18px;
+    width: 100%;
+    height: 38px;
+}
+.commet__input input{
+    width: 100%;
+    height: 38px;
+    padding: 0 10px;
+}
+
+/* stix */
+
+.section__stix {
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.stix__titl{
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+.stix__item {
+    position: relative;
+    width: 535px;
+    height: 207px;
+}
+.stix__lable {
+    
+}
+.stix__text{
+}
+.stix__title {
+    position: absolute;
+    top: 0;
+    margin-left: 180px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+}
+.stix__subtitle {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    margin-left: 180px;
+}
+
+/* stix slick */
+
+.roman-stix .slick-arrow{
+    font-size: 0;
+}
+
+.roman-stix  .slick-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.roman-stix  .slick-dots li{
+    list-style: none;
+    margin-right: 13px;
+}
+.roman-stix  .slick-dots li:last-child{
+    margin-right: 0;
+}
+/* Активная точка */
+.roman-stix  .slick-dots li.slick-active button{
+    background: #A4A5B0;
+}
+/* Элемент точки */
+.roman-stix  .slick-dots li button{
+    font-size: 0;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    border: 1px solid #A4A5B0;
+    background-color: inherit;
+}
+
+.slick-list{
+    overflow: hidden;
+}
+.slick-track{
+    display: flex;
+}

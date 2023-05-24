@@ -1,0 +1,146 @@
+.resens__title {
+    font-size: 50px;
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+.resens__subtitle {
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.resens-item {
+    font-size: 14px;
+    line-height: 1.2;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+}
+.resens__user {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.user__img {
+    margin-right: 10px;
+}
+.user__name {
+}
+.resens__res {
+    margin-bottom: 20px;
+}
+.res__title {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.res__text {
+}
+.item__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.resens__list {
+    display: flex;
+    text-align: center;
+    font-size: 1.3em;
+}
+.resens__list span{
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+.res__like {
+    cursor: pointer;
+    margin-right: 10px;
+}
+.res__comment {
+}
+.res__evel {
+    display: flex;
+    align-items: center;
+}
+.evel__number {
+    font-weight: 700;
+    font-size: 40px;
+    margin-right: 10px;
+}
+.evel__data {
+}
+
+/* roman */
+
+/* slick Roman*/
+
+/* Стрелка */
+.roman__wrapper .slick-arrow{
+    position: absolute;
+    top: 130px;
+}
+/* Стрелка влево */
+.roman__wrapper .slick-arrow.slick-prev{
+    left: -26px;
+    font-size: 0;
+    height: 50px;
+    width: 50px;
+    z-index: 10;
+    background: url('/icons/arrow.png') center;
+}
+/* Стрелка вправо */
+.roman__wrapper .slick-arrow.slick-next{
+    right: -6px;
+    font-size: 0;
+    height: 50px;
+    width: 50px;
+    z-index: 10;
+    background: url('/icons/arrow.png') center;
+    transform: rotate(180deg);
+}
+
+.slick-list{
+    overflow: hidden;
+}
+.slick-track{
+    display: flex;
+}
+
+/* Roman */
+
+.section__roman{
+    margin-bottom: 70px;
+}
+
+.roman__wrapper{
+    position: relative;
+    width: 100%;
+}
+
+.roman__item {
+    position: relative;
+    height: 400px;
+    width: 203px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.roman__title{
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 30px;
+}.roman__lable {
+    width: 203px;
+    height: auto;
+}
+.roman__suname {
+}
+.roman__name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}

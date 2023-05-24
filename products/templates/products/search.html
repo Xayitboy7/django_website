@@ -1,0 +1,15 @@
+<form method="GET">
+    {{ story_filter.form.as_p }}
+    <button type="submit">Поиск</button>
+</form>
+<h2>Блоги</h2>
+
+{% for story in filtered_stories %}
+    <!-- Отображение результатов поиска -->
+    <h3>{{ story.title }}</h3>
+    <p>{{ story.description }}</p>
+{% empty %}
+    <p>Нет результатов</p>
+{% endfor %}
+
+
